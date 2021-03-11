@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_weather">
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HA NOI"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:id="@+id/tvIconPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nhieu nang"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvLocation"
+        />
+    <TextView
+        android:id="@+id/tvTempNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="32 C"
+        android:textSize="120sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tvIconPhrase"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTempNow"
+        />
+
+</RelativeLayout>
